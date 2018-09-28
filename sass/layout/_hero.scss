@@ -1,0 +1,116 @@
+.hero {
+    grid-column: full-start / full-end;
+    
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+
+    &__mainbox{
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+
+        
+
+        &-btn{
+            height: 5rem;
+            width: 36rem;
+        }
+    }
+
+    &__pic {
+        position: absolute;
+        top:0;
+        left:0;
+        @media only screen and (max-width: $bp-xlarge) {
+            transform: scale(.7);
+        }
+        
+        &:hover &-photoBox{
+            clip-path: polygon(-20% 5%, 97% 25%, 48% 100%, 0px 92%);
+            transition: all .5s;
+        }
+        &:hover &-bg1 {
+            clip-path: polygon(65% 0, 100% 85%, 0 104%, 0 0);
+            transition: all .5s;
+        }
+        &-photoBox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .5s;
+            z-index: 3;
+            height: 53rem;
+            width: 56rem;
+            clip-path: polygon(-20% 5%, 97% 29%, 26% 100%, 0px 92%);
+            background-color: transparent;
+
+            &--pic{
+                height: 56rem;
+                width: auto;
+                z-index: 10;
+            }
+        }
+        &-bg1{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 45rem;
+            width: 60rem;
+            background-image: linear-gradient(210deg, $color-one, $color-two);
+            z-index: 2;
+            clip-path: polygon(65% 0, 100% 78%, 0 104%, 0 0);
+            background-color: transparent;
+            transition: all .5s;
+
+        }
+        &-bg2{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 65rem;
+            width: 35rem;
+            background-image: linear-gradient($color-bg-one, $color-bg-one);
+            z-index: 1;
+            clip-path: polygon(99% 0, 81% 85%, 0 98%, 0 0);
+            background-color: transparent;
+
+
+        }
+    }
+
+
+    &__callUs{
+        z-index: 6;
+        position: absolute;
+        top: 10rem;
+        right: 2rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid $color-border;
+        height: 4rem;
+        width: 20rem;
+        border-radius: 3px;
+
+        &-text{
+            text-transform: uppercase;
+            letter-spacing: 1.7;
+        }
+
+        &-num{
+            color: $color-one;
+            border-bottom: 1px solid $color-one;
+        }
+    }
+
+}

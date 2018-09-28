@@ -1,0 +1,72 @@
+.knowledge {
+    
+
+    grid-column: full-start / full-end;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    &__text{
+        z-index: 500;
+        transform: translateX(-20rem);
+
+        @media only screen and (max-width: $bp-small) {
+            transform: translateX(0rem);
+        }
+    }
+
+    &__cardBox{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20rem;
+        z-index: 501;
+        
+        & > :not(:last-child){
+            margin-right: 2rem;
+
+        }
+    }
+
+    &__bg{
+        z-index: 499;
+        position: absolute;
+        top:0;
+        left:0;
+        @media only screen and (max-width: $bp-medium) {
+            transform: scale(.8);
+            
+        }
+        @media only screen and (max-width: $bp-small) {
+            transform: scale(.5);
+        }
+
+
+
+        &-grey{
+            position: absolute;
+            top: 20rem;
+            left: 0rem;
+            width: 80rem;
+            height: 80rem;
+            clip-path: polygon(0 5%, 45% 0, 100% 75%, 0 100%);
+            background-image: linear-gradient($color-bg-one, $color-bg-one);
+            background-color: transparent;
+
+        }
+
+        &-color{
+            position: absolute;
+            top: 30rem;
+            left: 10rem;
+            height: 64rem;
+            width: 80rem;
+            clip-path: polygon(0 0, 100% 20%, 50% 100%, 10% 90%);
+            background-image: linear-gradient(-120deg, $color-three, $color-two);
+            background-color: transparent;
+        }
+    }
+}

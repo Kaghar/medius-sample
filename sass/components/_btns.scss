@@ -1,0 +1,73 @@
+.btn {
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:active{
+        transform: scale(0.95);
+        transition: all .2s;
+        color: #fff;
+    }
+
+    &:focus {
+        color: #fff;
+
+    }
+
+    &:hover{
+        color: #fff;
+    }
+  
+}
+
+.btnRed{
+    background-color: $color-one;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 5rem;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+
+    &:hover{
+        transition: all .2s;
+        background-color: $color-one-lighter;
+    }
+    
+}
+
+.btnBlue {
+    background-color: $color-three;
+    &:hover{
+        transition: all .2s;
+        background-color: $color-three-lighter;
+    }
+
+}
+
+.btnViolet {
+    background-color: $color-two;
+    &:hover{
+        transition: all .2s;
+        background-color: $color-two-lighter;
+    }
+}
+
+.btnOrange{
+    background-color: $color-six;
+    &:hover{
+        transition: all .2s;
+        background-color: $color-six-lighter;
+    }
+}
+.btnGreen{
+    background-color: $color-five;
+    &:hover{
+        transition: all .2s;
+        background-color: $color-five-lighter;
+    }
+}

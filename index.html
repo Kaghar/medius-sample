@@ -1,0 +1,321 @@
+<!DOCTYPE="html">
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resource/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+
+
+        <title>medius</title>
+        <!--*************************Favicon*************************!-->
+        <link rel="apple-touch-icon" sizes="152x152" href="vendor/css/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="vendor/css/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="vendor/css/favicon/favicon-16x16.png">
+        <link rel="manifest" href="vendor/css/favicon/site.webmanifest">
+        <link rel="mask-icon" href="vendor/css/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!--*************************Favicon*************************!-->
+    </head>
+
+    <body class="container">
+        <div class="sidebar" id="sidebarbg">
+            <div class="sidebar__content" id="sidebar">
+                <div class="sidebar__content-box" >
+                    <div class="sidebar__content-btn btn btnGreen" id="sidebtn">
+                        <div class="sidebar__content-btn--unskew">Get in touch</div>
+                    </div>
+                    <div class="sidebar__content-box--bg">
+                        <div class="sidebar__content-box--bg--grey"></div>
+                        <div class="sidebar__content-box--bg--color"></div>
+                    </div>
+                    <div class="sidebar__content-box--form">
+                        <div class="form">
+                            <h3 class="heading-3">How can we help you?</h3>
+                            <form class="form__contentBox">
+                                <div class="form__contentBox-inputarea">
+                                    <label for="mailmessage" class="form__contentBox-label">What's on your mind?</label>
+                                    <textarea name="message" id="mailmessage"  required></textarea>
+                                </div>
+                                <div class="form__contentBox-inputnames">
+                                    <div class="form__contentBox-inputnames--smallbox">
+                                        <label for="name" class="form__contentBox-label">First name *</label>
+                                        <input type="text" id="name" required>
+                                    </div>
+                                    <div class="form__contentBox-inputnames--smallbox">
+                                        <label for="lastname" class="form__contentBox-label">Last name *</label>
+                                        <input type="text" id="lastname" required>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form__contentBox-email">
+                                    <label for="mail" class="form__contentBox-label">Email *</label>
+                                    <input type="email" id="mail" required>
+                                </div>
+                                
+                                <div class="form__contentBox-dropdowns">
+                                    <div class="form__contentBox-dropdowns--country">
+                                        <label for="country" class="form__contentBox-label" id="country">Country</label>
+                                        <div class="form__contentBox-dropdowns--country--outputbox" id="selectbox">
+                                            <div class="form__contentBox-dropdowns--country--outputbox--content">
+                                                <img src="resource/img/sweden.png" alt="Flag" class="form__contentBox-dropdowns--country--outputbox--content--img" id="flagimg">
+                                                <p class="form__contentBox-dropdowns--country--outputbox--content--text" id="countryname">Sweden</p>
+                                            </div>
+                                            <div class="form__contentBox-dropdowns--country--outputbox--icon">&dtrif;</div>
+                                        </div>
+                                        <div class="form__contentBox-dropdowns--country--selectbox" id="dropdown">
+                                            <div class="form__contentBox-dropdowns--country--outputbox">
+                                                <div class="form__contentBox-dropdowns--country--outputbox--content">
+                                                    <img src="resource/img/sweden.png" alt="Flag" class="form__contentBox-dropdowns--country--outputbox--content--img">
+                                                    <p class="form__contentBox-dropdowns--country--outputbox--content--text">Sweden</p>
+                                                </div>
+                                                <div class="form__contentBox-dropdowns--country--outputbox--icon">&dtrif;</div>
+                                            </div>
+                                            
+                                            <div class="form__contentBox-dropdowns--country--outputbox">
+                                                <div class="form__contentBox-dropdowns--country--outputbox--content">
+                                                    <img src="resource/img/switz.png" alt="Flag" class="form__contentBox-dropdowns--country--outputbox--content--img">
+                                                    <p class="form__contentBox-dropdowns--country--outputbox--content--text">Switzerland</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="form__contentBox-dropdowns--country--outputbox">
+                                                <div class="form__contentBox-dropdowns--country--outputbox--content">
+                                                    <img src="resource/img/syria.png" alt="Flag" class="form__contentBox-dropdowns--country--outputbox--content--img">
+                                                    <p class="form__contentBox-dropdowns--country--outputbox--content--text">Syria</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="form__contentBox-dropdowns--country--outputbox">
+                                                <div class="form__contentBox-dropdowns--country--outputbox--content">
+                                                    <img src="resource/img/tai.png" alt="Flag" class="form__contentBox-dropdowns--country--outputbox--content--img">
+                                                    <p class="form__contentBox-dropdowns--country--outputbox--content--text">Taiwan</p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="form__contentBox-dropdowns--state">
+                                        <label for="state" class="form__contentBox-label">State</label>
+                                        <div class="form__contentBox-dropdowns--state--outputbox" id="state">
+                                            <p class="form__contentBox-dropdowns--state--outputbox--text">Select state</p>
+                                            <span class="form__contentBox-dropdowns--country--outputbox--icon">&dtrif;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__contentBox-questions">
+                                    <div class="form__contentBox-questions--textbox">
+                                        <p class="form__contentBox-questions--text">Would you like us to send you <br>a newsletter with our latest events?</p>
+                                        <p class="form__contentBox-questions--text">Do you agree we proccess your information <br>in order to provide the service?</p>
+                                    </div>
+                                    <div class="form__contentBox-questions--checkboxes">
+                                        <div class="form__contentBox-questions--checkboxes--radialbox">
+                                            <div class="form__contentBox-questions--checkboxes--radialbox--smallbox">
+                                                <input type="radio" name="question"class="form__contentBox-questions--checkboxes--radialbox--smallbox--input">
+                                                <span class="form__contentBox-questions--checkboxes--radialbox--smallbox--radialinput"><span class="form__contentBox-questions--checkboxes--radialbox--smallbox--radialinput--small"></span></span>
+                                                <p class="form__contentBox-questions--checkboxes--radialbox--smallbox--text">Yes</p>
+                                            </div>
+                                            <div class="form__contentBox-questions--checkboxes--radialbox--smallbox">
+                                                <input type="radio" name="question" class="form__contentBox-questions--checkboxes--radialbox--smallbox--input">
+                                                <span class="form__contentBox-questions--checkboxes--radialbox--smallbox--radialinput"><span class="form__contentBox-questions--checkboxes--radialbox--smallbox--radialinput--small"></span></span>
+                                                <p class="form__contentBox-questions--checkboxes--radialbox--smallbox--text">No</p>
+                                            </div>
+                                        </div>
+                                        <div class="form__contentBox-questions--checkboxes--square">
+                                            <input type="checkbox" class="form__contentBox-questions--checkboxes--square--input">
+                                            <span class="form__contentBox-questions--checkboxes--square--checkinput"><span class="form__contentBox-questions--checkboxes--square--checkinput--small"></span>
+                                            </span>
+                                            <p class="form__contentBox-questions--checkboxes--square--text">Got it!</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form__contentBox-radialbox">
+                                   
+                                    <div class="form__contentBox-radialbox--box">
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="form__contentBox-checkbox">
+                                    
+                                    
+                                </div>
+                                <input type="submit" value="Send" class="btn btnBlue form__contentBox-btn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sidebar__content-box--contact">
+                        <div class="sidecontact">
+                            <div class="sidecontact__sales">
+                                <h6 class="heading-6">Sales</h6>
+                                <p class="contact__info-topbox--subtitle">Ludvig Johansson</p>
+                                <p class="contact__info-topbox--text">AP Automation Advisor</p>
+                                <p class="contact__info-topbox--phone">+46 721 822 841</p>
+                                <p class="contact__info-bottombox--mail">ludvig.johansson@medius.se</p>
+                            </div>
+                            <div class="sidecontact__support">
+                                <h6 class="heading-6">Support</h6>
+                                <p class="contact__info-topbox--subtitle">Medius Global Service Center</p>
+                                <p class="contact__info-topbox--phone">+46 (0)8-410 234 80</p>
+                                <p class="contact__info-bottombox--mail">support@medius.se</p>
+                            </div>
+                            <div class="sidecontact__general">
+                                <div class="contact__info-topbox">
+                                    <h6 class="heading-6">General Matters</h6>
+                                    <p class="contact__info-topbox--subtitle">Medius AB</p>
+                                    <p class="contact__info-topbox--text">Klarabergsviadukten 90 <br>SE 111 64 Stockholm</p>
+                                </div>
+                                <div class="contact__info-bottombox">
+                                    <p class="contact__info-topbox--phone">+46 (0)8-411 16 50</p>
+                                    <p class="contact__info-bottombox--mail">info@medius.se</p>
+                                </div>
+                                
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <nav class="navigation mobilenav" id="navbar">
+            <div class="navigation__logobox mobilenav__logobox">
+                <a href="#hero"><img src="resource/img/logobig.png" alt="Picture of a logo" class="navigation__logobox-img mobilenav__logobox-img"></a> 
+                <p class="navigation__logobox-text">The true AP invoice automation experts</p>
+            </div>
+            <div class="navigation__links mobilenav__links">
+                <ul class="navigation__links-list mobilenav__links-list">
+                    <li class="navigation__links-list--item mobilenav__links-list--item"><a href="#about" class="navigation__links-link--item--link">Our solutions</a></li>
+                    <li class="navigation__links-list--item mobilenav__links-list--item"><a href="#knowledge" class="navigation__links-link--item--link">Knowledge</a></li>
+                    <li class="navigation__links-list--item mobilenav__links-list--item"><a href="#partners" class="navigation__links-link--item--link">Partners</a></li>
+                    <li class="navigation__links-list--item mobilenav__links-list--item"><a href="#solutions" class="navigation__links-link--item--link">About</a></li>
+                    <li class="navigation__links-list--item mobilenav__links-list--item"><a href="#contact" class="navigation__links-link--item--link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navigation__icons mobilenav__icons">
+                <button class="btn btnBlue navigation__icons-btn">Demo</button>
+                <svg class="navigation__icons-icon"><use xlink:href="vendor/css/svg/sprite.svg#icon-lock"></use></svg>
+                <svg class="navigation__icons-icon"><use xlink:href="vendor/css/svg/sprite.svg#icon-global"></use></svg>
+                <svg class="navigation__icons-icon"><use xlink:href="vendor/css/svg/sprite.svg#icon-search"></use></svg>
+            </div>
+            <div class="navigation__btn mobilenav__btn" id="mobilebtn">
+                <svg class="navigation__icons-icon"><use xlink:href="vendor/css/svg/sprite.svg#icon-one-finger-tap"></use></svg>
+            </div>
+        </nav>
+        <section class="hero" id="hero">
+            <div class="hero__mainbox">
+                <h1 class="heading-1">Automate your accounts <br> payable process.</h1>
+                <h2 class="heading-2">Gain control and efficiency.</h2>
+                <button class="btn btnRed hero__mainbox-btn">Automate your AP process</button>
+            </div>
+            <div class="hero__pic">
+                <div class="hero__pic-photobox">
+                    <img src="vendor/img/photo1.jpg" alt="Photo of a man with a phone" class="hero__pic-photobox--pic">
+                </div>
+                
+                <div class="hero__pic-bg1">&nbsp;</div>
+                <div class="hero__pic-bg2">&nbsp;</div>
+            </div>
+            <div class="hero__callUs">
+                <p class="hero__callUs-text">Call us:</p>
+                <p class="hero__callUs-num">+1 877 295 0058</p>
+            </div>
+        </section>
+        
+    
+        <section class="knowledge" id="knowledge">
+            <div class="knowledge__text contentBox__text">
+                <h3 class="heading-3 contentBox__text-title">The knowledge</h3>
+                <p class="contentBox__text-smalltext">Incididunt aute commodo minim ad officia fugiat. Ex adipisicing est anim in id culpa cupidatat. Dolore voluptate enim excepteur ullamco eu minim voluptate occaecat velit esse ullamco.</p>
+            </div>
+            <div class="knowledge__bg">
+                <div class="knowledge__bg-grey">&nbsp;</div>
+                <div class="knowledge__bg-color">&nbsp;</div>
+            </div>
+            <div class="knowledge__cardBox">
+                <div class="card">
+                    <div class="card__top card__top-fashion"></div>
+                    <div class="card__bottom">
+                        <div class="card__bottom-unskew">
+                            <h5 class="heading-5 card__bottom-title">How Marc Jacobs put AP invoice automation on the runway in just 3 weeks</h5>
+                            <p class="card__bottom-text">Hear how fashion innovator and global retailer Marc Jacobs revolutionized their AP workflow process by implementing the MediusFlow AP invoice automation solution.</p>
+                            <button class="btn btnViolet card__bottom-btn">Watch webinar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top card__top-glasses"></div>
+                    <div class="card__bottom">
+                        <div class="card__bottom-unskew">
+                            <h5 class="heading-5 card__bottom-title">5 tactics to achieve true matching of invoices</h5>
+                            <p class="card__bottom-text">When you take your invoice matching to the next level, invoices will flow through the AP process seamlessly in a fully touchless process where the AP invoice automation system does all the heavy lifting behind the scenes.</p>
+                            <button class="btn btnOrange card__bottom-btn">Read white paper</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__top card__top-achieve"></div>
+                    <div class="card__bottom">
+                        <div class="card__bottom-unskew">
+                            <h5 class="heading-5 card__bottom-title">Archieve your New Year's resolutions with more efficient invoice processing</h5>
+                            <p class="card__bottom-text">Hear how fashion innovator and global retailer Marc Jacobs revolutionized their AP workflow process by implementing the MediusFlow AP invoice automation solution</p>
+                            <button class="btn btnGreen card__bottom-btn">Enjoy blog post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        
+        <section class="latest">
+            <h3 class="heading-3">Latest from Medius</h3>
+            <div class="latest__contentBox">
+                <div class="card ">
+                    <div class="card__top card__top-fireworks"></div>
+                    <div class="card__bottom latest__card-bottom">
+                        <div class="card__bottom-unskew latest__card-unskew">
+                            <p class="card__bottom-date">News - February 4th 2017</p>
+                            <h5 class="heading-5 card__bottom-title latest__card-bottom--title">Archieve your New Year's resolutions with more efficient invoice processing</h5>
+                            <p class="card__bottom-text latest__card-bottom--text">Hear how fashion innovator and global retailer Marc Jacobs revolutionized their AP workflow process by implementing the MediusFlow AP invoice automation solution</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card latest__card">
+                    <div class="card__bottom latest__card-bottom latest__card-uniqtop">
+                        <div class="card__bottom-unskew latest__card-unskew">
+                            <p class="card__bottom-date">News - February 4th 2017</p>
+                            <h5 class="heading-5 card__bottom-title latest__card-bottom--title">Archieve your New Year's resolutions with more efficient invoice processing</h5>
+                            <p class="card__bottom-text latest__card-bottom--text">Hear how fashion innovator and global retailer Marc Jacobs revolutionized their AP workflow process by implementing the MediusFlow AP invoice automation solution</p>
+                        </div>
+                    </div>
+                    <div class="card__bottom latest__card-bottom  latest__card-uniqbottom">
+                        <div class="card__bottom-unskew latest__card-unskew">
+                            <p class="card__bottom-date">News - February 4th 2017</p>
+                            <h5 class="heading-5 card__bottom-title latest__card-bottom--title">Archieve your New Year's resolutions with more efficient invoice processing</h5>
+                            <p class="card__bottom-text latest__card-bottom--text">Hear how fashion innovator and global retailer Marc Jacobs revolutionized their AP workflow process by implementing the MediusFlow AP invoice automation solution</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btnGreen latest__btn">Show all the latest</button>
+            <div class="latest__bg">
+                <div class="latest__bg-grey"></div>
+                <div class="latest__bg-color"></div>
+            </div>
+        </section>
+
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="resource/js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+.sidebar{
+    
+    z-index: 9991;
+    position: fixed;
+    
+    height: 100vh;
+    width: 100%;
+    border-right: 4px solid $color-border-page;
+    pointer-events: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+
+    &__content{
+        
+        z-index: 9992;
+        transform: translateX(101%);
+        transition: all .5s;
+        
+
+        &-box{
+            align-self: flex-end;
+            display:flex;
+            position: relative;
+            z-index: 9993;
+            
+            &--bg{
+                z-index: 9987;
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                
+                &--grey{
+                    z-index: 9984;
+                    position: absolute;
+                    top: -9rem;
+                    left: 40rem;
+                    width: 51rem;
+                    height: 16rem;
+                    clip-path: polygon(25% 0, 98% 50%, 97% 100%, 0 100%);
+                    background-image: linear-gradient(#fff, #fff);
+                    background-color: transparent;
+                    
+                }
+                &--color{
+                    z-index: 9985;
+                    position: absolute;
+                    top: -9rem;
+                    left: 7rem;
+                    height: 20rem;
+                    width: 85rem;
+                    clip-path: polygon(15% 0, 98% 40%, 50% 100%, 0 100%);
+                    background-image: linear-gradient(221deg, $color-four    20%, $color-three 80%, $color-three);
+                    background-color: transparent;
+                }
+            }
+            
+            &--form{
+                z-index: 9993;
+                background-color: #fff;
+            }
+            &--contact{
+                z-index: 9993;
+            }
+
+        }
+
+
+        &-btn{
+            position: absolute;
+            top: 3rem;
+            left: -6.9rem;
+            z-index: 9990;
+            pointer-events: all;
+            margin-right: 0;
+            height: 26rem;
+            width: 6rem;
+            transform: skewY(10deg) translateY(3rem);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+    
+            &:active{
+                transform: scale(1) skewY(10deg) translateY(3rem);
+            }
+            
+    
+            &--unskew{
+                transform: skewY(-10deg) rotate(180deg);
+                font-size: 2rem;
+                writing-mode: vertical-lr;
+                
+    
+            }
+    
+        }
+    }
+
+    
+}

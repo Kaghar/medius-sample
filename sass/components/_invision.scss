@@ -1,0 +1,114 @@
+.invision {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9986;
+    color: $color-invision-icon;
+    pointer-events: none;
+    
+    &__left{
+        
+        position: absolute;
+        top:30rem;
+        left:0;
+        background-color: $color-invision;
+        height: 3rem;
+        width: 15rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        border-top-right-radius: 3px;
+        opacity: .6;
+
+        &-made{
+            
+
+        }
+        &-icon{
+            height: 2rem;
+            width: 2rem;
+            fill: $color-invision-icon;
+
+        }
+        &-logotext{
+            transform: translateX(-.8rem);
+            font-size: 1.2rem;  
+        }
+    }
+
+    &__right{
+        pointer-events: auto;
+        background-color: $color-invision;
+        position: absolute;
+        top:30rem;
+        right:0;
+        height: 4.5rem;
+        width: 27rem;
+        opacity: .6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top-left-radius: 3px;
+
+        
+
+
+        &-text{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & svg{
+                margin-right: .8rem;
+            }
+        }
+
+        &-hat{
+            align-self: stretch;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-right: 1px solid $color-invision-icon;
+            padding-right: 1rem;
+            
+            
+
+
+            & svg{
+                margin-right: .8rem;
+            }
+        }
+        &-icon{
+            height: 3rem;
+            width: 3rem;
+            fill: $color-invision-icon;
+            cursor: pointer;
+            
+        }
+        &-message{
+            position: absolute;
+            top:-6rem;
+            right:0rem;
+            width: 20rem;
+            height: 5rem;
+            background-color: #000;
+            color: #fff;
+            display:none;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 85% 90%, 85% 100%, 80% 90%, 0% 90%);
+            font-size: .9rem;
+            padding: .5rem 1rem;
+            text-align: center;
+
+            & span {
+                position: absolute;
+                top: 1px;
+                right: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}

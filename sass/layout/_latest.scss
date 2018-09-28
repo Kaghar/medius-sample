@@ -1,0 +1,123 @@
+.latest{
+    grid-column: center-start / center-end;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+    position: relative;
+    
+
+
+    &__contentBox{
+
+        z-index: 45;
+        margin-top: 4rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        & > * :not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &__card{
+        
+        &:hover{
+            transform: scale(1);
+            transition: all .2s;
+        }
+    
+        &:hover &-bottom{
+            box-shadow: $shadow-card;
+            transition: all .2s;
+        }
+        &-uniqtop{
+            margin-bottom: 4rem;
+            height: 31rem;
+            transform: skewY(-4deg) translateY(0rem);
+            transition: all .2s;
+            
+            &:hover{
+                box-shadow: $shadow-card-lighter;
+                transform: scale(1.02) skewY(-4deg) translateY(0rem);;
+                transition: all .2s;
+            }
+
+        }
+        &-uniqbottom{
+            height: 31rem;
+            transition: all .2s;
+            &:hover{
+                box-shadow: $shadow-card-lighter;
+                transform: scale(1.02) skewY(-4deg) translateY(-2rem);;
+                transition: all .2s;
+            }
+        }
+        &-unskew{justify-content: center;}
+        &-bottom{
+            margin-right: 2rem;
+            &--title{margin-top: 1rem;}
+
+            &--text{margin-top: 1rem;}
+        }
+    }
+    &__btn{
+        z-index: 44;
+        margin-top: 1rem;
+        height: 5rem;
+        width: 25rem;
+    }
+
+    &__bg{
+        position: absolute;
+        top:1rem;
+        left:1rem;
+
+        
+        @media only screen and (max-width: $bp-large) {
+            transform: scale(.9);
+        }
+        @media only screen and (max-width: $bp-medium) {
+            transform: scale(.7);
+        }
+        &-grey{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            height: 80rem;
+            width: 80rem;
+            clip-path: polygon(72% 7%, 100% 50%, 100% 85%, 10% 100%, 1% 20%);
+            background-image: linear-gradient($color-bg-one, $color-bg-one);
+            background-color: transparent;
+            @media only screen and (max-width: $bp-small) {
+                
+                height: 40rem;
+                width: 40rem;
+            }
+        }
+
+        &-color{
+            position: absolute;
+            top: 15rem;
+            left: 20rem;
+            height: 70rem;
+            width: 90rem;
+            clip-path: polygon(10% 0, 100% 20%, 60% 100%, 0 70%);
+            background-image: linear-gradient(100deg, $color-four , $color-three);
+            background-color: transparent;
+
+            @media only screen and (max-width: $bp-medium) {
+                height: 60rem;
+                width: 70rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                top: 15rem;
+                left: 10rem;
+                height: 40rem;
+                width: 60rem;
+            }
+        }
+    }
+}

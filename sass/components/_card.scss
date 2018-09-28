@@ -1,0 +1,78 @@
+.card{
+    
+    transition: all .2s;
+    &:hover{
+        transform: scale(1.02);
+        transition: all .2s;
+    }
+
+    &:hover &__bottom{
+        box-shadow: $shadow-card-lighter;
+        transition: all .2s;
+    }
+
+    &__top {
+        height: 34rem;
+        width: 43rem;
+        background-position: center;
+        background-size: cover;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        
+        
+        &-fashion{
+            background-image: url("../../vendor/img/photo4.jpg");
+        }
+        &-glasses{
+            background-image: url("../../vendor/img/photo5.jpg");
+        }
+        &-achieve{
+            background-image: url("../../vendor/img/photo6.jpg");
+        }
+        &-fireworks{
+            background-image: url("../../vendor/img/photo7.jpg");
+        }
+    }
+
+    &__bottom {
+        transition: all .2s;
+        background-color: #fff;
+        box-shadow: $shadow-card;
+        transform: skewY(-4deg) translateY(-2rem);
+        
+
+        &-unskew{
+            height: 35rem;
+            width: 43rem;
+            transform: skewY(4deg);
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        &-title{
+            margin-top: 2rem;
+
+        }
+
+        &-text{
+            text-align: justify;
+            font-size: 1.5rem;
+
+        }
+
+        &-btn{
+            margin-bottom: 3rem;
+            align-self: stretch;
+            height: 4rem;
+        }
+
+        &-date{
+            align-self: flex-start;
+            font-size: 1.5rem;
+            color: $color-date;
+        }
+        
+    }
+}

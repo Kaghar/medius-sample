@@ -1,0 +1,26 @@
+
+
+.sidecontact{
+    background-color: $color-text;
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    justify-content: center;
+    padding: 13rem 15rem 20rem 5rem;
+
+    & h6 {
+        margin-bottom: .5rem;
+    }
+
+    & > *:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &__general {
+        
+        & > :last-child {
+            padding-top: 2rem;
+        }
+    }
+}
